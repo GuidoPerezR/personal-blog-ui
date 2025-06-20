@@ -1,0 +1,33 @@
+# Node modules (si usas Node.js)
+node_modules/
+
+# Archivos de entorno
+.env
+.env.*
+
+# Salidas de build
+dist/
+build/
+.out/
+.next/
+.cache/
+.vite/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Salidas de Tailwind (si generas CSS)
+public/build/
+public/dist/
+*.css.map
+
+# Archivos personales
+*.local

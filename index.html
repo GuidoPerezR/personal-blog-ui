@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es-MX" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="./assets/output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="fixed top-0 left-0 right-0 bg-white z-20 outline-1 outline-gray-200/50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-2 group hover:cursor-pointer">
+                <div
+                    class="size-9 bg-gradient-to-br from-blue-900 to-cyan-400 rounded-lg group-hover:scale-110 transition-transform duration-200">
+                    <img src="./assets/logo-wbg.png" alt="Logo de mi blog con letras de mi apodo profesional">
+                </div>
+                <span class="font-bold group-hover:text-orange-400 transition-colors duration-200">Guido.Dev</span>
+            </div>
+            <div class="bg-gray-50 py-2 px-3 rounded-md hover:bg-gray-100 transition-colors duration-200 hover:cursor-pointer group md:hidden"
+                id="burger-menu">
+                <i
+                    class="fa-solid fa-bars text-lg text-gray-400 group-hover:text-gray-500 transition-colors duration-200"></i>
+            </div>
+            <div class="hidden absolute bg-white left-0 right-0 top-full m-4 py-4 px-2 shadow-lg z-30 rounded-sm flex-col text-base font-medium text-gray-700 md:flex md:flex-row md:bg-transparent md:shadow-none md:static md:py-0 md:px-0 md:m-0 md:gap-8 md:text-sm md:font-medium"
+                id="nav-items">
+                <a href="#home"
+                    class="px-3 py-2 rounded-md hover:bg-orange-100 hover:text-orange-500 transition-colors duration-200">Inicio</a>
+                <a href="#blog"
+                    class="px-3 py-2 rounded-md hover:bg-orange-100 hover:text-orange-500 transition-colors duration-200">Blog</a>
+                <a href="#about-me"
+                    class="px-3 py-2 rounded-md hover:bg-orange-100 hover:text-orange-500 transition-colors duration-200">Sobre
+                    mí</a>
+                <a href="#contact"
+                    class="px-3 py-2 rounded-md hover:bg-orange-100 hover:text-orange-500 transition-colors duration-200">Contacto</a>
+            </div>
+        </div>
+
+    </nav>
+    <main>
+        <section class="min-h-dvh flex flex-col justify-center items-center relative" id="home">
+            <div class="absolute top-20 left-10 w-20 h-20 bg-red-200 rounded-full opacity-20 animate-float"
+                bis_skin_checked="1"></div>
+            <div class="absolute top-40 right-20 w-32 h-32 bg-orange-200 rounded-full opacity-20 animate-float"
+                style="animation-delay: -2s;" bis_skin_checked="1"></div>
+            <div class="absolute bottom-20 left-1/4 w-16 h-16 bg-cyan-200 rounded-full opacity-20 animate-float"
+                style="animation-delay: -4s;" bis_skin_checked="1"></div>
+            <div class="flex flex-col gap-6 justify-center items-center py-16 px-8 max-w-6xl text-center mx-auto">
+                <header>
+                    <h1 class="text-4xl font-bold sm:text-5xl lg:text-6xl">Hey, Yo soy <span
+                            class="bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">Guido</span>
+                    </h1>
+                </header>
+                <p class="text-xl text-gray-600 mx-auto leading-relaxed max-w-3xl sm:text-2xl">Desarrollador Frontend
+                    enfocado en
+                    crear nuevas
+                    cosas y aprender a ser mejor cada dia.
+                </p>
+                <p class="text-lg text-gray-500 max-w-2xl">En este blog vas a encontrar artículos, experimentos visuales
+                    y
+                    estrategias que voy aprendiendo en mi dia a dia</p>
+                <div class="mt-6 flex flex-col gap-4 justify-center items-center sm:flex-row">
+                    <a href="#" class="bg-orange-500 text-white px-8 py-4 rounded-xl font-bold flex justify-center items-center gap-2 hover:scale-105 hover:bg-orange-600 hover:shadow-lg group transition-all duration-200
+                        ">Lee
+                        Mi Blog <i class="fa-solid fa-arrow-right text-lg group-hover:translate-x-2.5 transition-all duration-200
+                        "></i></a>
+                    <a href="#"
+                        class="bg-white shadow-md py-4 px-6 rounded-xl border border-gray-200 font-semibold text-gray-700 hover:border-orange-300 hover:text-orange-700 hover:shadow-lg hover:scale-105 transition-all duration-200">Acerca
+                        de
+                        mi</a>
+                </div>
+            </div>
+        </section>
+        <section class="min-h-dvh flex flex-col justify-center items-center" id="blog">
+            <div class="max-w-6xl flex flex-col gap-12 justify-center items-center py-16 px-4 lg:px-8">
+                <header class="flex flex-col justify-center items-center gap-6 text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Últimos artículos</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl">Pensamientos, tutoriales, y descubrimientos
+                        acerca del desarrollo web y la tecnología.</p>
+                    <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-cyan-500 rounded-full"
+                        bis_skin_checked="1">
+                </header>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <article
+                        class="flex flex-col bg-white shadow-md rounded-xl overflow-hidden hover:-translate-y-1 hover:shadow-md hover:cursor-pointer transition-all duration-300 group">
+                        <header class="relative h-48">
+                            <img src="./assets/images/tailwind-post-image.jpg"
+                                alt="Imagen de un señor investigando como usar una computadora mientras este tiene el logo de TailwindCSS"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <span
+                                class="absolute top-4 left-4 bg-orange-100 text-orange-500 rounded-full py-1 px-3 font-medium text-xs">Diseño</span>
+                        </header>
+                        <div class="p-6 flex flex-col gap-4">
+                            <p class="text-sm text-gray-600 font-base">Junio 10, 2025 • 6 min</p>
+                            <h3 class="text-xl font-bold group-hover:text-orange-500 transition-colors duration-200">
+                                Cómo construir tu primer
+                                portafolio con TailwindCSS</h3>
+                            <p class=" text-gray-600 leading-relaxed line-clamp-3">Aprende a estructurar un portafolio
+                                moderno usando
+                                TailwindCSS. Exploramos diseño
+                                responsivo,
+                                tarjetas de proyectos y animaciones sutiles para dejar una primera impresión
+                                profesional.
+                            </p>
+                            <a href="#" class="text-orange-600 font-medium flex items-center gap-2">Leer más <i
+                                    class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform duration-200"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article
+                        class="flex flex-col bg-white shadow-md rounded-xl overflow-hidden hover:-translate-y-1 hover:shadow-md hover:cursor-pointer transition-all duration-300 group">
+                        <header class="relative h-48">
+                            <img src="./assets/images/js-post-image.jpg"
+                                alt="Imagen con fondo negro y en medio esta el logo de JavaScript con el mimso nombre"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <span
+                                class="absolute top-4 left-4 bg-orange-100 text-orange-500 rounded-full py-1 px-3 font-medium text-xs">JavaScript</span>
+                        </header>
+                        <div class="p-6 flex flex-col gap-4">
+                            <p class="text-sm text-gray-600 font-base">Junio 5, 2025 • 8 min</p>
+                            <h3 class="text-xl font-bold group-hover:text-orange-500 transition-colors duration-200">
+                                JavaScript moderno en 2025: 5 técnicas que todo dev debe
+                                conocer</h3>
+                            <p class=" text-gray-600 leading-relaxed line-clamp-3">Desde optional chaining hasta
+                                top-level await, repasamos funciones nuevas que simplifican
+                                tu
+                                código y lo hacen más limpio, legible y poderoso.</p>
+                            <a href="#" class="text-orange-600 font-medium flex items-center gap-2">Leer más <i
+                                    class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform duration-200"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article
+                        class="flex flex-col bg-white shadow-md rounded-xl overflow-hidden hover:-translate-y-1 hover:shadow-md hover:cursor-pointer transition-all duration-300 group">
+                        <header class="relative h-48">
+                            <img src="./assets/images/burnout-post-image.jpg"
+                                alt="Imagen de una persona en una computadora acostado por el estres de tanto trabajar"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ">
+                            <span
+                                class="absolute top-4 left-4 bg-orange-100 text-orange-500 rounded-full py-1 px-3 font-medium text-xs">Lifestyle
+                                / Productivity</span>
+                        </header>
+                        <div class="p-6 flex flex-col gap-4">
+                            <p class="text-sm text-gray-600 font-base">Junio 7, 2025 • 5 min</p>
+                            <h3 class="text-xl font-bold group-hover:text-orange-500 transition-colors duration-200">
+                                Cómo evitar el burnout mientras aprendes desarrollo web</h3>
+                            <p class=" text-gray-600 leading-relaxed line-clamp-3 ">Aprender código puede ser
+                                emocionante y agotador. En este artículo te comparto consejos
+                                prácticos que me han ayudado a mantener la motivación, balancear estudio con descanso y
+                                no
+                                rendirme en el camino.</p>
+                            <a href="#" class="text-orange-600 font-medium flex items-center gap-2">Leer más <i
+                                    class="fa-solid fa-chevron-right group-hover:translate-x-1 transition-transform duration-200"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <a href="#"
+                    class="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 px-8 text-white py-4 rounded-xl font-bold flex justify-center items-center gap-2 hover:scale-105 hover:from-orange-500 hover:via-orange-600 hover:to-orange-700 hover:shadow-lg group transition-all duration-200">Ver
+                    todos los posts <i
+                        class="fa-solid fa-arrow-right text-lg group-hover:translate-x-2.5 transition-all duration-200"></i></a>
+            </div>
+
+        </section>
+
+        <section class="min-h-dvh flex flex-col justify-center items-center bg-orange-50" id="about-me">
+            <div class="py-16 px-4 mx-auto max-w-6xl flex flex-col gap-12 sm:px-6 lg-px-8 lg:flex-row">
+                <div class="flex flex-col gap-6 lg:flex-1">
+                    <div class="flex flex-col gap-6">
+                        <header class="flex flex-col gap-6">
+                            <span
+                                class="bg-orange-200 text-orange-700 rounded-full py-2 px-4 text-sm font-medium w-fit">Acerca
+                                de
+                                Mi</span>
+                            <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Creando experiencias digitales que
+                                marcan la
+                                diferencia</h2>
+                        </header>
+                        <div class="text-lg text-gray-600 leading-relaxed space-y-4">
+                            <p>Soy un desarrollador web en formación, apasionado por construir interfaces
+                                limpias, accesibles y
+                                con
+                                buen diseño.</p>
+                            <p>Empecé con curiosidad por cómo funciona el código, y hoy comparto lo que aprendo en el
+                                camino:
+                                desde
+                                diseño responsivo, hasta buenas prácticas en frontend.</p>
+                            <p>Mi enfoque es crear soluciones que no solo sean funcionales, sino también intuitivas y
+                                agradables
+                                para el usuario.</p>
+                            <p>Cuando no estoy codeando, ando probando cosas nuevas, escribiendo o imaginando cómo se
+                                vería
+                                el
+                                código si tuviera flow.</p>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <header class="font-medium text-lg
+                        ">Tecnologias con las que trabajo</header>
+                            <ul class="flex flex-wrap gap-3">
+                                <li
+                                    class="bg-white shadow-sm rounded-lg px-4 py-2 font-medium text-gray-700 text-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                                    HTML</li>
+                                <li
+                                    class="bg-white shadow-sm rounded-lg px-4 py-2 font-medium text-gray-700 text-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                                    CSS</li>
+                                <li
+                                    class="bg-white shadow-sm rounded-lg px-4 py-2 font-medium text-gray-700 text-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                                    JavaScript</li>
+                                <li
+                                    class="bg-white shadow-sm rounded-lg px-4 py-2 font-medium text-gray-700 text-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                                    TailwindCSS</li>
+                                <li
+                                    class="bg-white shadow-sm rounded-lg px-4 py-2 font-medium text-gray-700 text-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                                    Python</li>
+                                <li
+                                    class="bg-white shadow-sm rounded-lg px-4 py-2 font-medium text-gray-700 text-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                                    pnpm</li>
+                            </ul>
+                        </div>
+                        <div class="flex gap-4 mt-4">
+                            <a href="#"
+                                class="bg-white shadow-sm size-10 text-gray-400 rounded-lg flex justify-center items-center hover:bg-orange-200 hover:text-orange-500 hover:shadow-md transition-all duration-200">
+                                <svg class="size-5">
+                                    <use xlink:href="assets/sprite.svg#github"></use>
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="bg-white shadow-sm size-10 text-gray-400 rounded-lg flex justify-center items-center hover:bg-orange-200 hover:text-orange-500 hover:shadow-md transition-all duration-200"><svg
+                                    class="size-5">
+                                    <use xlink:href="assets/sprite.svg#x"></use>
+                                </svg></a>
+                            <a href="#"
+                                class="bg-white shadow-sm size-10 text-gray-400 rounded-lg flex justify-center items-center hover:bg-orange-200 hover:text-orange-500 hover:shadow-md transition-all duration-200"><svg
+                                    class="size-5">
+                                    <use xlink:href="assets/sprite.svg#linkedin"></use>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center lg:flex-1" id="contact">
+                    <article class="flex flex-col gap-8 p-8 bg-white rounded-2xl shadow-xl w-full">
+                        <div
+                            class="size-64 bg-gradient-to-br from-orange-300 via-orange-700 to-orange-300 rounded-full overflow-hidden mx-auto flex justify-center items-center">
+                            <div class="size-48 rounded-full overflow-hidden ">
+                                <img src="./assets/images/card-profile-image.png" alt="Imagen de Guido.Dev">
+                            </div>
+                        </div>
+                        <div class="flex justify-around items-center text-center">
+                            <div>
+                                <p class="text-2xl font-bold">50+</p>
+                                <p class="text-sm text-gray-600">Proyectos</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold">5+</p>
+                                <p class="text-sm text-gray-600">Años</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold">100+</p>
+                                <p class="text-sm text-gray-600">Articulos</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white">
+        <div class="px-4 max-w-6xl mx-auto sm:px-6 lg:px-8">
+            <div class="py-12 flex flex-col gap-6 md:flex-row">
+                <div class="flex flex-col gap-4 md:flex-1">
+                    <div class="flex items-center gap-2">
+                        <div class="size-9 bg-gradient-to-br from-blue-900 to-cyan-400 rounded-lg">
+                            <img src="./assets/logo-wbg.png" alt="Logo de mi blog con letras de mi apodo profesional">
+                        </div>
+                        <span class="font-semibold text-lg">Guido.Dev</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">Aqui comparto mis pensamientos y experiencias sobre
+                        el desarrollo
+                        web.</p>
+                </div>
+                <div class="flex flex-col gap-4 md:flex-1">
+                    <header>
+                        <p class="font-semibold text-lg">
+                            Links Rapidos
+                        </p>
+                    </header>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Inicio</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Blog</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Sobre
+                                mi</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white transition-colors duration-200">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4 md:flex-1">
+                    <header class="font-semibold text-lg">
+                        <p>Categoriaas</p>
+                    </header>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Desarrollo
+                                Web</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white transition-colors duration-200">Tecnología</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white transition-colors duration-200">Tutoriales</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white transition-colors duration-200">Opiniones</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4 md:flex-1">
+                    <header class="font-semibold text-lg">
+                        <p>Contacto</p>
+                    </header>
+                    <p class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">
+                        guidoperez27@hotmail.com
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="bg-gray-800 size-8 text-gray-400 rounded-lg flex justify-center items-center hover:bg-orange-400 hover:text-white transition-all duration-200">
+                            <svg class="size-4">
+                                <use xlink:href="assets/sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-gray-800 size-8 text-gray-400 rounded-lg flex justify-center items-center hover:bg-orange-400 hover:text-white transition-all duration-200"><svg
+                                class="size-4">
+                                <use xlink:href="assets/sprite.svg#x"></use>
+                            </svg></a>
+                        <a href="#"
+                            class="bg-gray-800 size-8 text-gray-400 rounded-lg flex justify-center items-center hover:bg-orange-400 hover:text-white transition-all duration-200"><svg
+                                class="size-4">
+                                <use xlink:href="assets/sprite.svg#linkedin"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 py-6 justify-between items-center border-t border-gray-800 sm:flex-row">
+                <p class="text-sm text-gray-400">&copy; 2023 Mi Blog Personal. Todos los derechos reservados.</p>
+                <div class="flex text-sm text-gray-400 gap-4 justify-center items-center">
+                    <p class="hover:text-white hover:cursor-pointer transition-colors duration-200">Politica de
+                        Privacidad</p>
+                    <p class="hover:text-white hover:cursor-pointer transition-colors duration-200">Terminos y
+                        condiciones</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
