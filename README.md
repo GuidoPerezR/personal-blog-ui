@@ -4,7 +4,7 @@ UI de una aplicación para uso de un blog personal
 
 ## 🌐 Enlace al sitio
 
-- [https://github.com/GuidoPerezR/personal-blog-ui](https://github.com/GuidoPerezR/personal-blog-ui)
+- [https://guidoperezr.github.io/personal-blog-ui/](https://guidoperezr.github.io/personal-blog-ui/)
 
 ## 🛠️ Tecnologías utilizadas
 
